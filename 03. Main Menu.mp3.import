@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ds3socyofoney"
+path="res://.godot/imported/03. Main Menu.mp3-33d8f0a838e16967d10d66ab6b3fb918.mp3str"
+
+[deps]
+
+source_file="res://03. Main Menu.mp3"
+dest_files=["res://.godot/imported/03. Main Menu.mp3-33d8f0a838e16967d10d66ab6b3fb918.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

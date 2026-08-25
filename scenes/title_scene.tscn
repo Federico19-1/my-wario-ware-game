@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://djvrhm5pynekd"]
+
+[ext_resource type="Script" uid="uid://r82xevkoehv8" path="res://Scenes/title_scene.gd" id="1_b6ftn"]
+[ext_resource type="Texture2D" uid="uid://4d2l7vo41n3o" path="res://background main screen.png" id="1_hlkgs"]
+
+[node name="BackgroundTitle" type="Node2D" unique_id=713233528]
+script = ExtResource("1_b6ftn")
+
+[node name="Background" type="TextureRect" parent="." unique_id=210856324]
+offset_right = 13749.91
+offset_bottom = 5353.348
+scale = Vector2(0.083709635, 0.12067214)
+texture = ExtResource("1_hlkgs")
+
+[node name="Wario Loves Taralli!" type="RichTextLabel" parent="." unique_id=89355146]
+offset_left = 22.0
+offset_top = 47.0
+offset_right = 984.0
+offset_bottom = 199.0
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 85
+text = "Wario Loves Taralli!"
+
+[node name="Start" type="Button" parent="." unique_id=2146179788]
+offset_left = 495.0
+offset_top = 223.0
+offset_right = 644.0
+offset_bottom = 267.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Start Game"
+
+[node name="Settings" type="Button" parent="." unique_id=1912367368]
+offset_left = 493.0
+offset_top = 272.0
+offset_right = 642.0
+offset_bottom = 316.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Settings"
+
+[node name="Quit" type="Button" parent="." unique_id=2146597934]
+offset_left = 495.0
+offset_top = 323.0
+offset_right = 643.0
+offset_bottom = 367.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Quit"
+
+[node name="Tarallo intro text" type="RichTextLabel" parent="." unique_id=786444235]
+offset_left = 37.0
+offset_top = 194.0
+offset_right = 417.0
+offset_bottom = 384.0
+theme_override_constants/outline_size = 6
+text = "The tarallo, whose scientific name is trallalluzzo, is a traditional baked good from southern Italy shaped like a cookie with a hole in the center. It has ancient origins: charred remains dating back to the Messapian era were discovered in Oria (BR) in the 1970s at the Monte Papalucio sanctuary."
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

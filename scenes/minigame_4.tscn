@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://cxqh2d1wbxkrm"]
+
+[ext_resource type="Script" uid="uid://elxc4asfixdb" path="res://minigame_4.gd" id="1_4ashd"]
+[ext_resource type="Texture2D" uid="uid://bvicgsx1xjeio" path="res://Puglia.jpg" id="2_lrixb"]
+[ext_resource type="Texture2D" uid="uid://cnhc2ykh8c883" path="res://taralli pugliesi.png" id="3_xea2i"]
+[ext_resource type="PackedScene" uid="uid://b17vr6vu6g3o7" path="res://Scenes/timer_minigames.tscn" id="4_ake4f"]
+[ext_resource type="Texture2D" uid="uid://pvuh0sqxd7dl" path="res://X WarioO.png" id="5_frvhq"]
+[ext_resource type="Texture2D" uid="uid://bwrpdibo522v8" path="res://Wario ME.png" id="6_yexny"]
+[ext_resource type="Texture2D" uid="uid://ctra4cpqom3i5" path="res://Wario Wario .png" id="7_y1k8l"]
+[ext_resource type="Texture2D" uid="uid://brq61qn83knxe" path="res://WA Text 1.png" id="8_ksguu"]
+[ext_resource type="Texture2D" uid="uid://gpsx66j7v7li" path="res://Linea 1.png" id="9_y1k8l"]
+[ext_resource type="Texture2D" uid="uid://dyxpgqn3e3ci6" path="res://Wario legacy 12.png" id="10_ksguu"]
+
+[node name="minigame_4" type="Node2D" unique_id=1275056941]
+script = ExtResource("1_4ashd")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=741517895]
+offset_right = 1150.0
+offset_bottom = 646.0
+texture = ExtResource("2_lrixb")
+
+[node name="Alberobello, Puglia" type="RichTextLabel" parent="." unique_id=1564690792]
+offset_left = 694.0
+offset_top = 32.0
+offset_right = 1097.0
+offset_bottom = 110.0
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/normal_font_size = 41
+text = "Alberobello, Puglia"
+
+[node name="Tarallo" type="TextureButton" parent="." unique_id=252662949]
+offset_left = 299.0
+offset_top = 80.0
+offset_right = 913.0
+offset_bottom = 711.0
+scale = Vector2(0.7896733, 0.80968714)
+texture_normal = ExtResource("3_xea2i")
+stretch_mode = 0
+
+[node name="Eat the Tarallo" type="RichTextLabel" parent="." unique_id=2013595442]
+offset_left = 44.0
+offset_top = 117.0
+offset_right = 233.0
+offset_bottom = 259.0
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/normal_font_size = 30
+text = "Eat the Tarallo"
+
+[node name="ThemedTimer" parent="." unique_id=637361821 instance=ExtResource("4_ake4f")]
+position = Vector2(294, 540)
+
+[node name="Yellow X" type="TextureRect" parent="." unique_id=921536189]
+offset_left = 6.0
+offset_top = 89.0
+offset_right = 195.0
+offset_bottom = 259.0
+texture = ExtResource("5_frvhq")
+expand_mode = 1
+
+[node name="Little_Wario" type="TextureRect" parent="." unique_id=1230253950]
+offset_left = 1032.0
+offset_top = 248.0
+offset_right = 1154.0
+offset_bottom = 350.0
+texture = ExtResource("6_yexny")
+expand_mode = 1
+
+[node name="Wario" type="TextureRect" parent="." unique_id=499836193]
+offset_left = 20.0
+offset_top = 243.0
+offset_right = 252.0
+offset_bottom = 568.0
+texture = ExtResource("7_y1k8l")
+expand_mode = 1
+
+[node name="WA Text" type="TextureRect" parent="." unique_id=216435996]
+offset_left = 109.0
+offset_top = 4.0
+offset_right = 499.0
+offset_bottom = 341.0
+texture = ExtResource("8_ksguu")
+expand_mode = 1
+
+[node name="Wario\'s territory" type="TextureRect" parent="." unique_id=772789936]
+offset_left = 657.99994
+offset_top = -109.0
+offset_right = 1144.0
+offset_bottom = 142.0
+rotation = 0.21138074
+texture = ExtResource("9_y1k8l")
+expand_mode = 1
+
+[node name="Wario\'s territory2" type="TextureRect" parent="." unique_id=1040304310]
+offset_left = 614.00006
+offset_top = -19.000008
+offset_right = 1100.0001
+offset_bottom = 232.0
+rotation = -0.15632118
+texture = ExtResource("9_y1k8l")
+expand_mode = 1
+
+[node name="Wario number One" type="TextureRect" parent="." unique_id=515166138]
+offset_left = 709.0
+offset_top = 547.0
+offset_right = 1138.0
+offset_bottom = 618.0
+texture = ExtResource("10_ksguu")
+expand_mode = 1
+
+[connection signal="pressed" from="Tarallo" to="." method="_on_tarallo_pressed"]

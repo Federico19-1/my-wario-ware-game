@@ -11,12 +11,22 @@ config_version=5
 [application]
 
 config/name="MyWarioWareGame"
+run/main_scene="uid://djvrhm5pynekd"
 config/features=PackedStringArray("4.6", "Mobile")
-config/icon="res://icon.svg"
+config/icon="uid://bwrpdibo522v8"
+
+[autoload]
+
+Global="*uid://dsyd65cwbjxhd"
+MusicManager="*uid://qigr44b3badu"
 
 [display]
 
 window/stretch/mode="viewport"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
 [physics]
 
@@ -25,4 +35,3 @@ window/stretch/mode="viewport"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="mobile"

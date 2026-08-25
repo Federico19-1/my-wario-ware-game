@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://20wbdgfch6uh"]
+
+[ext_resource type="Script" uid="uid://dtl647y6vx27o" path="res://Scenes/timer_screen.gd" id="1_x4haq"]
+[ext_resource type="Texture2D" uid="uid://drocv7cs44diy" path="res://Sfondo marrone cucina.jpg" id="2_fnywg"]
+[ext_resource type="Texture2D" uid="uid://djkandpy51twm" path="res://tarallo1 NO SFONDO.png" id="3_xfu15"]
+
+[node name="timer_screen" type="Node2D" unique_id=956223542]
+script = ExtResource("1_x4haq")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=167675163]
+offset_right = 1200.0
+offset_bottom = 675.0
+texture = ExtResource("2_fnywg")
+
+[node name="GarlicContainer" type="HBoxContainer" parent="." unique_id=1731996526]
+offset_left = -1.9999962
+offset_top = 43.0
+offset_right = 1648.0
+offset_bottom = 597.0
+scale = Vector2(0.7293517, 0.7900928)
+theme_override_constants/separation = -280
+
+[node name="Garlic" type="TextureRect" parent="GarlicContainer" unique_id=814485258]
+layout_mode = 2
+texture = ExtResource("3_xfu15")
+
+[node name="Garlic2" type="TextureRect" parent="GarlicContainer" unique_id=325186326]
+layout_mode = 2
+texture = ExtResource("3_xfu15")
+
+[node name="Garlic3" type="TextureRect" parent="GarlicContainer" unique_id=2105289912]
+layout_mode = 2
+texture = ExtResource("3_xfu15")
+
+[node name="Garlic4" type="TextureRect" parent="GarlicContainer" unique_id=433488627]
+layout_mode = 2
+texture = ExtResource("3_xfu15")
+
+[node name="Garlic5" type="TextureRect" parent="GarlicContainer" unique_id=1092249830]
+layout_mode = 2
+texture = ExtResource("3_xfu15")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=16359466]
+offset_left = 499.0
+offset_top = 379.0
+offset_right = 667.0
+offset_bottom = 446.0
+theme_override_font_sizes/normal_font_size = 42
+text = "Level  #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=365445173]
+offset_left = 1033.0
+offset_top = 538.0
+offset_right = 1144.0
+offset_bottom = 641.0
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0"

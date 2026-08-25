@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://b413tem1se52x"]
+
+[ext_resource type="Script" uid="uid://b413bbw5rcwky" path="res://Scenes/settings_scene.gd" id="1_cmf5w"]
+[ext_resource type="Texture2D" uid="uid://di63mxojuve85" path="res://Settings Settings.jpg" id="2_amiku"]
+
+[node name="settings_scene" type="Node2D" unique_id=653785141]
+script = ExtResource("1_cmf5w")
+
+[node name="Background" type="TextureRect" parent="." unique_id=209542719]
+offset_right = 1156.0
+offset_bottom = 642.0
+texture = ExtResource("2_amiku")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2018656106]
+offset_left = 82.0
+offset_top = 207.0
+offset_right = 411.0
+offset_bottom = 506.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1278951256]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+text = "Volume"
+
+[node name="VolumeSlider" type="HSlider" parent="VBoxContainer" unique_id=1180332410]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="FullscreenToggle" type="CheckButton" parent="VBoxContainer" unique_id=1028303689]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+text = "Full Screen"
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=262220404]
+layout_mode = 2
+theme_override_constants/outline_size = 6
+text = "Back to the Menu"
+
+[connection signal="value_changed" from="VBoxContainer/VolumeSlider" to="." method="_on_volume_slider_value_changed"]
+[connection signal="toggled" from="VBoxContainer/FullscreenToggle" to="." method="_on_fullscreen_toggle_toggled"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

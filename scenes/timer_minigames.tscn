@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b17vr6vu6g3o7"]
+
+[ext_resource type="Script" uid="uid://d3qqecvhcfbnb" path="res://timer_minigames.gd" id="1_ko0mn"]
+
+[node name="ThemedTimer" type="Node2D" unique_id=637361821]
+position = Vector2(71, 71)
+script = ExtResource("1_ko0mn")
+
+[node name="Layer" type="CanvasLayer" parent="." unique_id=607243764]
+
+[node name="timer" type="RichTextLabel" parent="Layer" unique_id=435219841]
+offset_left = 1054.0
+offset_top = 170.0
+offset_right = 1149.0
+offset_bottom = 257.0
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/normal_font_size = 50
+text = "0.0"

@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://jcjvswvmjgbt"]
+
+[ext_resource type="Script" uid="uid://cmkex7vcejiwu" path="res://Scenes/minigame_2.gd" id="1_dfb65"]
+[ext_resource type="Texture2D" uid="uid://ddtotl5x7pera" path="res://Napoli.jpg" id="1_psbsm"]
+[ext_resource type="Script" uid="uid://dspw2ssn40lvo" path="res://Scenes/button_1.gd" id="2_l4g8r"]
+[ext_resource type="PackedScene" uid="uid://b17vr6vu6g3o7" path="res://Scenes/timer_minigames.tscn" id="3_dfb65"]
+[ext_resource type="Texture2D" uid="uid://c263mx6emrmbj" path="res://Tarallo Napoletano.png" id="3_rfxq2"]
+[ext_resource type="Script" uid="uid://chfh4vhcvuufn" path="res://Scenes/button_2.gd" id="5_mmgun"]
+[ext_resource type="Script" uid="uid://bv5gr0i64kmx6" path="res://Scenes/button_3.gd" id="6_h684j"]
+[ext_resource type="Script" uid="uid://dob6e3eblqj7l" path="res://Scenes/button_4.gd" id="7_wu6l1"]
+[ext_resource type="Script" uid="uid://cnl3vcv1e2yis" path="res://Scenes/button_5.gd" id="8_cqly6"]
+
+[node name="Minigame_2" type="Node2D" unique_id=1480464186]
+script = ExtResource("1_dfb65")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=607841455]
+offset_right = 1150.0
+offset_bottom = 651.0
+texture = ExtResource("1_psbsm")
+
+[node name="Naples, Italy" type="RichTextLabel" parent="." unique_id=457836387]
+offset_left = 830.0
+offset_top = 25.0
+offset_right = 1146.0
+offset_bottom = 96.0
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/normal_font_size = 41
+text = "Naples, Italy"
+
+[node name="Button_1" type="TextureButton" parent="." unique_id=1350434516]
+offset_left = 1.0
+offset_top = 9.0
+offset_right = 291.0
+offset_bottom = 211.0
+texture_normal = ExtResource("3_rfxq2")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("2_l4g8r")
+
+[node name="Button_2" type="TextureButton" parent="." unique_id=382328155]
+offset_left = 765.0
+offset_top = 35.0
+offset_right = 1055.0
+offset_bottom = 237.0
+texture_normal = ExtResource("3_rfxq2")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_mmgun")
+
+[node name="Button_3" type="TextureButton" parent="." unique_id=903522517]
+offset_left = 378.0
+offset_top = 37.0
+offset_right = 759.0
+offset_bottom = 306.0
+texture_normal = ExtResource("3_rfxq2")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("6_h684j")
+
+[node name="Button_4" type="TextureButton" parent="." unique_id=1668165343]
+offset_left = 216.0
+offset_top = 316.0
+offset_right = 466.0
+offset_bottom = 494.0
+texture_normal = ExtResource("3_rfxq2")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("7_wu6l1")
+
+[node name="Button_5" type="TextureButton" parent="." unique_id=898316719]
+offset_left = 888.0
+offset_top = 386.0
+offset_right = 1138.0
+offset_bottom = 564.0
+texture_normal = ExtResource("3_rfxq2")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("8_cqly6")
+
+[node name="ThemedTimer" parent="." unique_id=637361821 instance=ExtResource("3_dfb65")]
+position = Vector2(-76, 327)
+
+[connection signal="pressed" from="Button_1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button_2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button_3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button_4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button_5" to="." method="_on_button_5_pressed"]
