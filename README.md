@@ -4,7 +4,7 @@ A WarioWare-like game where Wario is obsessed by the tipical south italian buscu
 You can try it here: https://federico19-1.itch.io/wario-loves-taralli
 
 ## How to play
-You have 5 lives and you have to win at least 7 minigames to achieve the win.
+You have 5 lives and you have to win at least 6 times to achieve the win.
 The minigames are:
 - 1. Platformer Game: You have to grab all 3 Sicilian Taralli in less of 10 seconds;
 - 2. Clicker Game: You have to click at all 5 Napoletain Taralli in less of 10 seconds;
